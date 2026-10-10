@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:skeleton_skull",
+      "components": {
+        "minecraft:enchantment_glint_override": true
+      }
+    },
+    "title": "A devil may cry.",
+    "description": "Kill La Lame Diabolique",
+    "hidden": false
+  },
+  "parent": "combatplus:actual_advancement_tree/teledrowned_kill",
+  "criteria": {
+    "boss": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "nbt": "{Tags:[\"devil_dagger\"]}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "boss"
+    ]
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "anvil_cost": 0,
+  "description": "Surge Protector",
+  "effects": {
+    "minecraft:attributes": [],
+    "minecraft:damage_protection": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": 25
+        },
+        "requirements": {
+          "condition": "minecraft:damage_source_properties",
+          "predicate": {
+            "tags": [
+              {
+                "expected": true,
+                "id": "minecraft:is_lightning"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:damage_source_properties",
+          "predicate": {
+            "tags": [
+              {
+                "id": "minecraft:mace_smash",
+                "expected": true
+              }
+            ]
+          }
+        },
+        "effect": {
+          "type": "minecraft:add",
+          "value": 25
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:damage_source_properties",
+          "predicate": {
+            "tags": [
+              {
+                "id": "combatplus:fireworks",
+                "expected": true
+              }
+            ]
+          }
+        },
+        "effect": {
+          "type": "minecraft:add",
+          "value": 25
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#minecraft:swords",
+  "weight": 1
+}

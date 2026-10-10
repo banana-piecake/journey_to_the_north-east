@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:melon",
+      "components": {
+        "minecraft:enchantment_glint_override": true
+      }
+    },
+    "title": "This boss cost $5.",
+    "description": "Summon Maximus Wizard.",
+    "hidden": false
+  },
+  "parent": "combatplus:actual_advancement_tree/root",
+  "criteria": {
+    "boss": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "components": {
+            "minecraft:custom_data": {
+              "boss": "wizard"
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "boss"
+    ]
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "eureka": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "components": {
+            "minecraft:custom_data": {
+              "eureka": "orb"
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "eureka"
+    ]
+  ],
+  "rewards": {
+    "function": "combatplus:new_enchantments/eureka_orb_use"
+  }
+}

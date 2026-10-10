@@ -1,0 +1,3 @@
+execute as @s at @s run summon cave_spider ~ ~ ~ {Glowing:1b,DeathLootTable:"combatplus:caveboss",Team:"boss",Tags:["caveboss"],CustomName:{"bold":true,"color":"#4DFF00","shadow_color":-15651309,"text":"Giant Cave Spider"},attributes:[{id:"minecraft:armor",base:10},{id:"minecraft:armor_toughness",base:10},{id:"minecraft:attack_knockback",base:3},{id:"minecraft:max_health",base:200},{id:"minecraft:safe_fall_distance",base:100},{id:"minecraft:scale",base:2},{id:"minecraft:step_height",base:10}]}
+execute at @s run scoreboard players set @n[tag=caveboss] babies 3
+execute at @s run scoreboard players set @n[tag=caveboss] webshoot 3

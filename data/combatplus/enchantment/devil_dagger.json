@@ -1,0 +1,111 @@
+{
+  "description": "devil's dagger",
+  "supported_items": "#minecraft:swords",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "attacker",
+          "predicate": {
+            "minecraft:flags": {
+              "is_on_ground": true
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:apply_impulse",
+          "direction": [
+            0,
+            5,
+            1
+          ],
+          "coordinate_scale": [
+            0,
+            1,
+            0
+          ],
+          "magnitude": 0.4
+        },
+        "enchanted": "attacker",
+        "affected": "attacker"
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "attacker",
+          "predicate": {
+            "minecraft:flags": {
+              "is_on_ground": true
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:apply_impulse",
+          "direction": [
+            0,
+            5,
+            1
+          ],
+          "coordinate_scale": [
+            0,
+            1,
+            0
+          ],
+          "magnitude": 0.3
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "attacker",
+          "predicate": {
+            "minecraft:flags": {
+              "is_on_ground": false
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:apply_impulse",
+          "direction": [
+            0,
+            -5,
+            0
+          ],
+          "coordinate_scale": [
+            0,
+            1,
+            0
+          ],
+          "magnitude": 0.3
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      }
+    ],
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:fall_damage_multiplier",
+        "id": "minecraft:fall_damage_multiplier",
+        "amount": -1,
+        "operation": "add_multiplied_total"
+      }
+    ]
+  }
+}

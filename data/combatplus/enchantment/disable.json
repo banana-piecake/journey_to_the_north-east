@@ -1,0 +1,48 @@
+{
+  "description": "Disable",
+  "supported_items": "#minecraft:spears",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:attack_damage",
+        "id": "combatplus:disabler_damage",
+        "amount": 6,
+        "operation": "add_value"
+      },
+      {
+        "attribute": "minecraft:attack_speed",
+        "id": "combatplus:disabler_speed",
+        "amount": -0.3,
+        "operation": "add_multiplied_total"
+      }
+    ],
+    "minecraft:post_attack": [
+      {
+        "requirements": {
+          "condition": "minecraft:random_chance",
+          "chance": 0.15
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "combatplus:new_enchantments/disable_offhand"
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+scoreboard players set @s brawler_leap_active 0
+execute at @s run summon evoker_fangs ~ ~ ~1 {Warmup:0}
+execute at @s run summon evoker_fangs ~ ~ ~-1 {Warmup:0}
+execute at @s run summon evoker_fangs ~1 ~ ~ {Warmup:0}
+execute at @s run summon evoker_fangs ~-1 ~ ~ {Warmup:0}
+execute at @s run summon evoker_fangs ~1 ~ ~1 {Warmup:6}
+execute at @s run summon evoker_fangs ~-1 ~ ~-1 {Warmup:6}
+execute at @s run summon evoker_fangs ~-1 ~ ~1 {Warmup:6}
+execute at @s run summon evoker_fangs ~1 ~ ~-1 {Warmup:6}
+execute at @s run summon evoker_fangs ~ ~ ~2 {Warmup:12}
+execute at @s run summon evoker_fangs ~ ~ ~-2 {Warmup:12}
+execute at @s run summon evoker_fangs ~2 ~ ~ {Warmup:12}
+execute at @s run summon evoker_fangs ~-2 ~ ~ {Warmup:12}
+execute at @s run summon evoker_fangs ~1 ~ ~2 {Warmup:18}
+execute at @s run summon evoker_fangs ~1 ~ ~-2 {Warmup:18}
+execute at @s run summon evoker_fangs ~2 ~ ~1 {Warmup:18}
+execute at @s run summon evoker_fangs ~-2 ~ ~1 {Warmup:18}
+execute at @s run summon evoker_fangs ~-1 ~ ~2 {Warmup:18}
+execute at @s run summon evoker_fangs ~-1 ~ ~-2 {Warmup:18}
+execute at @s run summon evoker_fangs ~2 ~ ~-1 {Warmup:18}
+execute at @s run summon evoker_fangs ~-2 ~ ~-1 {Warmup:18}
+execute at @s run summon evoker_fangs ~2 ~ ~2 {Warmup:24}
+execute at @s run summon evoker_fangs ~2 ~ ~-2 {Warmup:24}
+execute at @s run summon evoker_fangs ~-2 ~ ~2 {Warmup:24}
+execute at @s run summon evoker_fangs ~-2 ~ ~-2 {Warmup:24}

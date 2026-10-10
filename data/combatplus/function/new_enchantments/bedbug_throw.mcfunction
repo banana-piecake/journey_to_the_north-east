@@ -1,0 +1,2 @@
+execute at @s run summon armor_stand ~ ~ ~ {Small:1b,Invisible:1b,Tags:["bedbug"],equipment:{chest:{id:"minecraft:oak_button",count:1,components:{"minecraft:enchantments":{"combatplus:bedbug_summoner":1}}}}}
+execute at @s run ride @n[tag=bedbug] mount @s

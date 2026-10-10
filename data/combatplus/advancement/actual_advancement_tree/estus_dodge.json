@@ -1,0 +1,60 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:campfire"
+    },
+    "title": "This is NOT a soulslike",
+    "description": "Have the Estus Flask and Dodge Boots at the same time.",
+    "frame": "challenge"
+  },
+  "parent": "combatplus:actual_advancement_tree/root",
+  "criteria": {
+    "dark": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "components": {
+                        "minecraft:custom_data": {
+                          "estus": "flask"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "components": {
+                        "minecraft:custom_data": {
+                          "dodge": "boots"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "dark"
+    ]
+  ]
+}

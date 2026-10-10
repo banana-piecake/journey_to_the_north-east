@@ -1,0 +1,53 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:crossbow",
+          "weight": 1,
+          "quality": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "The Webshooter",
+                "minecraft:enchantments": {
+                  "combatplus:webshooter": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_sword",
+          "weight": 1,
+          "quality": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantments": {
+                  "combatplus:venomous": 3
+                },
+                "minecraft:swing_animation": {
+                  "type": "stab",
+                  "duration": 12
+                },
+                "minecraft:item_name": "Spider Fang",
+                "minecraft:custom_data": {
+                  "spider": "fang"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "functions": []
+    }
+  ],
+  "functions": []
+}

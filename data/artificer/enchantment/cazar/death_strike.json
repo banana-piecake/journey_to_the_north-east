@@ -1,0 +1,101 @@
+{
+  "description": "Death Strike",
+  "supported_items": "#minecraft:swords",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:flags": {
+              "is_on_ground": false
+            },
+            "effects": {
+              "minecraft:unluck": {
+                "amplifier": 12
+              }
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:explode",
+          "knockback_multiplier": 3,
+          "offset": [
+            0,
+            2,
+            0
+          ],
+          "radius": 3,
+          "block_interaction": "none",
+          "small_particle": {
+            "type": "minecraft:dust",
+            "color": 12196892,
+            "scale": 0.01
+          },
+          "large_particle": {
+            "type": "minecraft:dust",
+            "color": 13314602,
+            "scale": 0.01
+          },
+          "block_particles": [],
+          "sound": "minecraft:entity.dragon_fireball.explode"
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:flags": {
+              "is_on_ground": false
+            },
+            "effects": {
+              "minecraft:unluck": {
+                "amplifier": 12
+              }
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "artificer:cazar/death_strike_in_air"
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:flags": {
+              "is_on_ground": true
+            },
+            "effects": {
+              "minecraft:luck": {
+                "amplifier": 12
+              }
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "artificer:cazar/death_strike_on_ground"
+        }
+      }
+    ]
+  }
+}

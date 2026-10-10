@@ -1,0 +1,79 @@
+{
+  "description": "Heavy Blade",
+  "supported_items": "#minecraft:swords",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "direct_attacker",
+          "predicate": {
+            "minecraft:type_specific/player": {
+              "input": {
+                "sneak": true
+              }
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "combatplus:new_enchantments/heavy_blade_victim"
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      }
+    ],
+    "minecraft:knockback": [
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "direct_attacker",
+          "predicate": {
+            "minecraft:type_specific/player": {
+              "input": {
+                "sneak": true
+              }
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:add",
+          "value": 3
+        }
+      }
+    ],
+    "minecraft:damage": [
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "direct_attacker",
+          "predicate": {
+            "minecraft:type_specific/player": {
+              "input": {
+                "sneak": true
+              }
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:multiply",
+          "factor": 1.2
+        }
+      }
+    ]
+  }
+}

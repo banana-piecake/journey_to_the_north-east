@@ -1,0 +1,91 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "minecraft:rotten_flesh",
+    "X": "minecraft:carrot"
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "result": {
+    "id": "minecraft:carrot",
+    "components": {
+      "minecraft:consumable": {
+        "consume_seconds": 1.75,
+        "animation": "drink",
+        "on_consume_effects": [
+          {
+            "type": "minecraft:apply_effects",
+            "effects": [
+              {
+                "id": "minecraft:hunger",
+                "amplifier": 0,
+                "duration": 200
+              },
+              {
+                "id": "minecraft:poison",
+                "duration": 100
+              },
+              {
+                "id": "minecraft:darkness",
+                "duration": 400
+              },
+              {
+                "id": "minecraft:weakness",
+                "duration": 300
+              },
+              {
+                "id": "minecraft:slowness",
+                "duration": 100
+              },
+              {
+                "id": "minecraft:blindness",
+                "duration": 60
+              },
+              {
+                "id": "minecraft:unluck",
+                "duration": 1200
+              },
+              {
+                "id": "minecraft:infested",
+                "duration": 200
+              },
+              {
+                "id": "minecraft:mining_fatigue",
+                "duration": 300
+              },
+              {
+                "id": "minecraft:glowing",
+                "duration": 300
+              },
+              {
+                "id": "minecraft:wither",
+                "duration": 40
+              },
+              {
+                "id": "minecraft:nausea",
+                "duration": 1200
+              }
+            ]
+          }
+        ]
+      },
+      "minecraft:item_name": "Evil Carrot",
+      "minecraft:enchantment_glint_override": true,
+      "minecraft:damage_resistant": {
+        "types": "#minecraft:is_fire"
+      },
+      "minecraft:lore": [
+        {
+          "text": "[SUPPORTER ITEM]",
+          "color": "#ff0000",
+          "italic": false
+        },
+        "\"can u also add evil carrots\" - StrayCat"
+      ]
+    }
+  }
+}

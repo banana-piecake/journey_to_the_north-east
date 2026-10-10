@@ -1,0 +1,92 @@
+{
+  "attributes": {
+    "minecraft:visual/sky_color": "#ffb54d",
+    "minecraft:visual/ambient_particles": [
+      {
+        "particle": {
+          "type": "minecraft:white_ash"
+        },
+        "probability": 0.025
+      },
+      {
+        "particle": {
+          "type": "minecraft:flash",
+          "color": 16777215
+        },
+        "probability": 0.00008
+      }
+    ],
+    "minecraft:visual/fog_color": "#ffbd61",
+    "minecraft:visual/cloud_height": 180,
+    "minecraft:audio/background_music": {
+      "default": {
+        "sound": "minecraft:music_disc.precipice",
+        "min_delay": 0,
+        "max_delay": 0,
+        "replace_current_music": true
+      },
+      "underwater": {
+        "sound": "minecraft:music_disc.precipice",
+        "min_delay": 0,
+        "max_delay": 0,
+        "replace_current_music": true
+      },
+      "creative": {
+        "sound": "minecraft:music_disc.precipice",
+        "min_delay": 0,
+        "max_delay": 0,
+        "replace_current_music": true
+      }
+    },
+    "minecraft:audio/ambient_sounds": {
+      "additions": [
+        {
+          "sound": "minecraft:entity.blaze.burn",
+          "tick_chance": 0.0005
+        },
+        {
+          "sound": "minecraft:entity.zombie.attack_iron_door",
+          "tick_chance": 0.0005
+        },
+        {
+          "sound": "minecraft:entity.player.attack.crit",
+          "tick_chance": 0.0005
+        }
+      ]
+    }
+  },
+  "carvers": [],
+  "downfall": 0.5,
+  "effects": {
+    "water_color": "#610000",
+    "grass_color": "#8f4c00",
+    "foliage_color": "#f5c000",
+    "dry_foliage_color": "#e64500"
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+  ],
+  "has_precipitation": false,
+  "spawn_costs": {},
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [],
+    "misc": [],
+    "monster": [],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "temperature": 0.5
+}

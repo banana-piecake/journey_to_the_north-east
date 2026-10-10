@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "hellkite": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "components": {
+            "minecraft:custom_data": {
+              "combatplus": "hellkite"
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "hellkite"
+    ]
+  ],
+  "rewards": {
+    "function": "combatplus:new_enchantments/hellkite_hold"
+  }
+}

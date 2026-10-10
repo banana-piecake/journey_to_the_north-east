@@ -1,0 +1,73 @@
+{
+  "description": "Shadow Step",
+  "exclusive_set": "combatplus:dash",
+  "supported_items": "#minecraft:enchantable/foot_armor",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "feet"
+  ],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "shadedash": 140
+              }
+            },
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:type_specific/player": {
+                  "input": {
+                    "sneak": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "combatplus:new_enchantments/shadedash"
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:type_specific/player": {
+              "gamemode": [
+                "spectator"
+              ],
+              "input": {
+                "jump": true,
+                "sneak": true
+              }
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "combatplus:new_enchantments/shadeexit"
+        }
+      }
+    ]
+  }
+}

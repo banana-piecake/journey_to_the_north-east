@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bow",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "Dodgeball",
+                "minecraft:enchantments": {
+                  "combatplus:dodgeball": 1
+                },
+                "minecraft:item_model": "minecraft:red_wool"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_sword",
+          "conditions": [],
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "The Nail",
+                "minecraft:enchantments": {
+                  "combatplus:nail": 1
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "functions": []
+    }
+  ]
+}

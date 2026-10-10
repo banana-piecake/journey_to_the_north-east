@@ -1,0 +1,50 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "oxo",
+    "xcx",
+    "oxo"
+  ],
+  "key": {
+    "x": [
+      "minecraft:iron_ingot"
+    ],
+    "c": [
+      "minecraft:redstone"
+    ],
+    "o": [
+      "minecraft:glass_bottle"
+    ]
+  },
+  "result": {
+    "id": "minecraft:stick",
+    "components": {
+      "minecraft:custom_data": {
+        "estus": "flask"
+      },
+      "minecraft:item_name": {
+        "text": "Estus Flask",
+        "color": "#fffdc2"
+      },
+      "minecraft:item_model": "minecraft:potion",
+      "minecraft:consumable": {
+        "consume_seconds": 0.7,
+        "animation": "drink",
+        "has_consume_particles": false
+      },
+      "minecraft:potion_contents": {
+        "custom_color": 16731469
+      },
+      "minecraft:enchantment_glint_override": true,
+      "minecraft:food": {
+        "nutrition": 0,
+        "saturation": 0,
+        "can_always_eat": true
+      },
+      "minecraft:use_cooldown": {
+        "seconds": 15,
+        "cooldown_group": "estus"
+      }
+    }
+  }
+}

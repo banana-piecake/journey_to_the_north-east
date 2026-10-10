@@ -1,0 +1,4 @@
+execute at @s run summon spider ~ ~ ~ {CustomName:"Baby Spider",attributes:[{id:"minecraft:jump_strength",base:1.4},{id:"minecraft:max_health",base:5},{id:"minecraft:movement_speed",base:0.2},{id:"minecraft:safe_fall_distance",base:100},{id:"minecraft:scale",base:0.5}]}
+execute at @s run summon spider ~ ~ ~ {CustomName:"Baby Spider",attributes:[{id:"minecraft:jump_strength",base:1.4},{id:"minecraft:max_health",base:5},{id:"minecraft:movement_speed",base:0.2},{id:"minecraft:safe_fall_distance",base:100},{id:"minecraft:scale",base:0.5}]}
+execute at @s run summon spider ~ ~ ~ {CustomName:"Baby Spider",attributes:[{id:"minecraft:jump_strength",base:1.4},{id:"minecraft:max_health",base:5},{id:"minecraft:movement_speed",base:0.2},{id:"minecraft:safe_fall_distance",base:100},{id:"minecraft:scale",base:0.5}]}
+scoreboard players set @s babies 1

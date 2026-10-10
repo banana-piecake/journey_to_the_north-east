@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:recovery_compass",
+      "components": {
+        "minecraft:enchantment_glint_override": true
+      }
+    },
+    "title": "Journey to the North-East",
+    "description": "And so your journey begins. Your journey to the North-East.",
+    "background": "minecraft:block/smooth_basalt",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "journey": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "requirements": [
+    [
+      "journey"
+    ]
+  ],
+  "rewards": {
+    "function": "combatplus:scoreboard_load"
+  }
+}

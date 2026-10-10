@@ -1,0 +1,7 @@
+kill @e[tag=chaser1]
+kill @e[tag=chaser2]
+kill @e[tag=chaser3]
+execute at @s run summon vex ~ ~ ~5 {CustomNameVisible:0b,CustomName:"Seeker",Team:"boss",Tags:["chaser1"],equipment:{mainhand:{id:"minecraft:stone_sword",count:1,components:{"minecraft:item_model":"air","minecraft:enchantments":{"combatplus:seeker":1}}}},drop_chances:{mainhand:0.010},active_effects:[{id:"minecraft:invisibility",amplifier:1,duration:200000,show_particles:0b}],attributes:[{id:"minecraft:scale",base:3}]}
+execute at @s run summon vex ~ ~ ~-5 {CustomNameVisible:0b,CustomName:"Seeker",Team:"boss",Tags:["chaser2"],equipment:{mainhand:{id:"minecraft:stone_sword",count:1,components:{"minecraft:item_model":"air","minecraft:enchantments":{"combatplus:seeker":1}}}},drop_chances:{mainhand:0.010},active_effects:[{id:"minecraft:invisibility",amplifier:1,duration:200000,show_particles:0b}],attributes:[{id:"minecraft:scale",base:3}]}
+execute at @s run summon vex ~5 ~ ~ {CustomNameVisible:0b,CustomName:"Seeker",Team:"boss",Tags:["chaser3"],equipment:{mainhand:{id:"minecraft:stone_sword",count:1,components:{"minecraft:item_model":"air","minecraft:enchantments":{"combatplus:seeker":1}}}},drop_chances:{mainhand:0.010},active_effects:[{id:"minecraft:invisibility",amplifier:1,duration:200000,show_particles:0b}],attributes:[{id:"minecraft:scale",base:3}]}
+scoreboard players set @s seekers 0

@@ -1,0 +1,41 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "iron_axe",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_spear",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "The Disabler™",
+                "minecraft:item_model": "minecraft:iron_axe",
+                "minecraft:enchantments": {
+                  "combatplus:disable": 1
+                },
+                "!minecraft:kinetic_weapon": {},
+                "minecraft:attack_range": {
+                  "min_reach": 0,
+                  "max_reach": 3,
+                  "min_creative_reach": 0,
+                  "max_creative_reach": 5
+                },
+                "minecraft:swing_animation": {
+                  "type": "whack",
+                  "duration": 8
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

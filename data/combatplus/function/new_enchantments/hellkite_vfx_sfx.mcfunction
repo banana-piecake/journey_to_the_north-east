@@ -1,0 +1,2 @@
+$execute at @s run playsound minecraft:entity.elder_guardian.curse master @a[distance=0..8] ~ ~1 ~ 2 $(pitch)
+function combatplus:new_enchantments/hellkite_particles_charge with storage combatplus:hellkite_vfx

@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "boss": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "components": {
+            "minecraft:custom_data": {
+              "miniboss": "dark"
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "boss"
+    ]
+  ],
+  "rewards": {
+    "function": "combatplus:bosses/summons/darkone"
+  }
+}

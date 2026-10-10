@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": [
+    "minecraft:trident"
+  ],
+  "addition": "minecraft:lava_bucket",
+  "template": [
+    "minecraft:diamond"
+  ],
+  "result": {
+    "id": "minecraft:trident",
+    "components": {
+      "minecraft:enchantments": {
+        "combatplus:hellfork": 1
+      },
+      "minecraft:item_name": "Hellfork"
+    }
+  }
+}

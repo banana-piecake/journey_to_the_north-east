@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "boss": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "components": {
+            "minecraft:custom_data": {
+              "boss": "cazar"
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "boss"
+    ]
+  ],
+  "rewards": {
+    "function": "combatplus:bosses/summons/summon_checks/cazar"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": "minecraft:blaze_rod",
+    "X": "minecraft:iron_ingot"
+  },
+  "pattern": [
+    " #X",
+    "# X",
+    " #X"
+  ],
+  "result": {
+    "id": "minecraft:bow",
+    "components": {
+      "minecraft:item_name": "The Blaze",
+      "minecraft:enchantments": {
+        "combatplus:blaze": 1
+      },
+      "minecraft:custom_data": {
+        "combatplus": "blaze"
+      }
+    }
+  }
+}

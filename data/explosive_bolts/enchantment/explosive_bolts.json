@@ -1,0 +1,37 @@
+{
+  "description": "Explosive Shot",
+  "supported_items": "#explosive_bolts:bows",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "direct_attacker",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:arrow"
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "combatplus:new_enchantments/explosive_bolt_hit"
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      }
+    ]
+  }
+}

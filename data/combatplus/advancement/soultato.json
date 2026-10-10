@@ -1,0 +1,34 @@
+{
+  "criteria": {
+    "void": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": {
+          "effects": {
+            "minecraft:resistance": {
+              "amplifier": 57
+            }
+          }
+        },
+        "damage": {
+          "type": {
+            "tags": [
+              {
+                "id": "combatplus:bypass",
+                "expected": false
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "void"
+    ]
+  ],
+  "rewards": {
+    "function": "combatplus:consumables/soultato"
+  }
+}

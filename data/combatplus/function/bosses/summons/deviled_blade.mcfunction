@@ -1,0 +1,2 @@
+summon parched ~ ~ ~ {Glowing:1b,Team:"miniboss",Tags:["devil_dagger"],CustomName:"Lame Diabolique",equipment:{mainhand:{id:"minecraft:netherite_sword",count:1,components:{enchantments:{"combatplus:devil_dagger":1},"minecraft:item_name":"Dague du Diable","minecraft:item_model":"iron_sword"}}},drop_chances:{mainhand:2.000},attributes:[{id:"minecraft:follow_range",base:60},{id:"minecraft:max_health",base:80},{id:"minecraft:movement_speed",base:0.4}]}
+advancement revoke @s only combatplus:devil_dagger

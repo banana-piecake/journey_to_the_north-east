@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": "minecraft:stick",
+    "X": "#minecraft:copper_tool_materials",
+    "Y": [
+      "minecraft:copper_nugget"
+    ]
+  },
+  "pattern": [
+    "Y",
+    "X",
+    "#"
+  ],
+  "result": {
+    "id": "minecraft:copper_spear",
+    "components": {
+      "minecraft:item_model": "minecraft:copper_sword",
+      "minecraft:item_name": "Copper Shortsword",
+      "minecraft:attack_range": {
+        "min_reach": 0,
+        "max_reach": 2,
+        "min_creative_reach": 0,
+        "max_creative_reach": 3
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:attack_damage",
+          "id": "combatplus:copper_shortsword",
+          "amount": 2,
+          "operation": "add_value",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:attack_speed",
+          "id": "combatplus:copper_shortsword",
+          "amount": 0.2,
+          "operation": "add_value",
+          "slot": "mainhand"
+        }
+      ],
+      "!minecraft:kinetic_weapon": {}
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "X": "minecraft:iron_ingot",
+    "O": "minecraft:diamond"
+  },
+  "pattern": [
+    "O O",
+    "X X"
+  ],
+  "result": {
+    "components": {
+      "minecraft:item_name": "Speedster Boots",
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:movement_speed",
+          "id": "speedster:boots",
+          "amount": 0.15,
+          "operation": "add_multiplied_total",
+          "slot": "feet"
+        },
+        {
+          "type": "minecraft:armor",
+          "id": "speedster:footar",
+          "amount": 2,
+          "operation": "add_value",
+          "slot": "feet"
+        }
+      ],
+      "minecraft:trim": {
+        "material": "minecraft:diamond",
+        "pattern": "minecraft:silence"
+      }
+    },
+    "count": 1,
+    "id": "minecraft:iron_boots"
+  }
+}

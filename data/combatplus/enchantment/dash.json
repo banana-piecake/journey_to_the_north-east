@@ -1,0 +1,422 @@
+{
+  "description": "Dodge",
+  "supported_items": "#minecraft:foot_armor",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "feet"
+  ],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "dash": 40
+              }
+            },
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:type_specific/player": {
+                  "input": {
+                    "forward": true,
+                    "backward": false,
+                    "left": false,
+                    "right": false,
+                    "sprint": true
+                  }
+                },
+                "minecraft:flags": {
+                  "is_flying": false
+                }
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:apply_impulse",
+          "direction": [
+            0,
+            0,
+            1.78
+          ],
+          "coordinate_scale": [
+            1,
+            0,
+            1
+          ],
+          "magnitude": 1.78
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "dash": 40
+              }
+            },
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:type_specific/player": {
+                  "input": {
+                    "forward": false,
+                    "backward": true,
+                    "left": false,
+                    "right": false,
+                    "sprint": true
+                  }
+                },
+                "minecraft:flags": {
+                  "is_flying": false
+                }
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:apply_impulse",
+          "direction": [
+            0,
+            0,
+            -1.78
+          ],
+          "coordinate_scale": [
+            1,
+            0,
+            1
+          ],
+          "magnitude": 1.78
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "dash": 40
+              }
+            },
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:type_specific/player": {
+                  "input": {
+                    "forward": false,
+                    "backward": false,
+                    "left": false,
+                    "right": true,
+                    "sprint": true
+                  }
+                },
+                "minecraft:flags": {
+                  "is_flying": false
+                }
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:apply_impulse",
+          "direction": [
+            -1.78,
+            0,
+            0
+          ],
+          "coordinate_scale": [
+            1,
+            0,
+            1
+          ],
+          "magnitude": 1.78
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "dash": 40
+              }
+            },
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:type_specific/player": {
+                  "input": {
+                    "forward": false,
+                    "backward": false,
+                    "left": true,
+                    "right": false,
+                    "sprint": true
+                  }
+                },
+                "minecraft:flags": {
+                  "is_flying": false
+                }
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:apply_impulse",
+          "direction": [
+            1.78,
+            0,
+            0
+          ],
+          "coordinate_scale": [
+            1,
+            0,
+            1
+          ],
+          "magnitude": 1.78
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "dash": 40
+              }
+            },
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:type_specific/player": {
+                  "input": {
+                    "forward": true,
+                    "backward": false,
+                    "left": false,
+                    "right": true,
+                    "sprint": true
+                  }
+                },
+                "minecraft:flags": {
+                  "is_flying": false
+                }
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:apply_impulse",
+          "direction": [
+            -1.78,
+            0,
+            1.78
+          ],
+          "coordinate_scale": [
+            1,
+            0,
+            1
+          ],
+          "magnitude": 1.78
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "dash": 40
+              }
+            },
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:type_specific/player": {
+                  "input": {
+                    "forward": true,
+                    "backward": false,
+                    "left": true,
+                    "right": false,
+                    "sprint": true
+                  }
+                },
+                "minecraft:flags": {
+                  "is_flying": false
+                }
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:apply_impulse",
+          "direction": [
+            1.78,
+            0,
+            1.78
+          ],
+          "coordinate_scale": [
+            1,
+            0,
+            1
+          ],
+          "magnitude": 1.78
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "dash": 40
+              }
+            },
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:type_specific/player": {
+                  "input": {
+                    "forward": false,
+                    "backward": true,
+                    "left": true,
+                    "right": false,
+                    "sprint": true
+                  }
+                },
+                "minecraft:flags": {
+                  "is_flying": false
+                }
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:apply_impulse",
+          "direction": [
+            1.78,
+            0,
+            -1.78
+          ],
+          "coordinate_scale": [
+            1,
+            0,
+            1
+          ],
+          "magnitude": 1.78
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "dash": 40
+              }
+            },
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:type_specific/player": {
+                  "input": {
+                    "forward": false,
+                    "backward": true,
+                    "left": false,
+                    "right": true,
+                    "sprint": true
+                  }
+                },
+                "minecraft:flags": {
+                  "is_flying": false
+                }
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:apply_impulse",
+          "direction": [
+            -1.78,
+            0,
+            -1.78
+          ],
+          "coordinate_scale": [
+            1,
+            0,
+            1
+          ],
+          "magnitude": 1.78
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:type_specific/player": {
+                  "input": {
+                    "sprint": true
+                  }
+                },
+                "minecraft:flags": {
+                  "is_flying": false
+                }
+              }
+            },
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "dash": 40
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "combatplus:dash"
+        }
+      }
+    ]
+  }
+}

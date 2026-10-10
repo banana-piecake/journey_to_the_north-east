@@ -1,0 +1,60 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:enchanted_book"
+    },
+    "title": "A fraction of his power.",
+    "description": "Obtain the Mystic Tome and Advisor's Lance.",
+    "frame": "challenge"
+  },
+  "parent": "combatplus:actual_advancement_tree/grand_advisor_kill",
+  "criteria": {
+    "dark": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "components": {
+                        "minecraft:custom_data": {
+                          "mystic": "tome"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "components": {
+                        "minecraft:enchantments": {
+                          "combatplus:ultrastab": 1
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "dark"
+    ]
+  ]
+}

@@ -1,0 +1,1 @@
+tag @s add smite_arrow

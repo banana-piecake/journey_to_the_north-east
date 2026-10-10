@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": [
+    "minecraft:diamond_sword"
+  ],
+  "addition": [
+    "minecraft:shield"
+  ],
+  "template": [
+    "iron_spear"
+  ],
+  "result": {
+    "id": "minecraft:diamond_spear",
+    "components": {
+      "minecraft:item_name": "Parrying Blade",
+      "minecraft:enchantments": {
+        "parry:parry": 1
+      },
+      "minecraft:unbreakable": {},
+      "minecraft:swing_animation": {
+        "type": "whack",
+        "duration": 8
+      },
+      "!minecraft:kinetic_weapon": {},
+      "minecraft:item_model": "diamond_sword"
+    }
+  }
+}

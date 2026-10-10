@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "requirements": [
+    [
+      "tick"
+    ]
+  ],
+  "rewards": {
+    "function": "combatplus:recipe_give_set_one"
+  }
+}

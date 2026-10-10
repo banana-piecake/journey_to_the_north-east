@@ -1,0 +1,7 @@
+execute at @s run playsound minecraft:entity.zombie.attack_iron_door master @a[distance=0..5] ~ ~ ~ 2 1.3
+execute at @s run playsound minecraft:entity.zombie.attack_iron_door master @a[distance=0..5] ~ ~ ~ 2 1.4
+execute at @s run playsound minecraft:entity.zombie.attack_iron_door master @a[distance=0..5] ~ ~ ~ 2 1.2
+execute at @s run particle scrape ~ ~0.15 ~ 0 0 0 3 60 normal
+execute at @s run summon ominous_item_spawner ~ ~0.3 ~ {spawn_item_after_ticks:50,item:{id:"minecraft:iron_ingot",count:1,components:{"minecraft:custom_data":{boss:"cazar"},"minecraft:item_model":"minecraft:player_head","minecraft:item_name":"Ruby Heart","minecraft:consumable":{consume_seconds:5,animation:"drink",has_consume_particles:false},"minecraft:enchantment_glint_override":true,"minecraft:profile":{"properties":[{"name":"textures","value":"ewogICJ0aW1lc3RhbXAiIDogMTc2ODcxOTI4NDM2MCwKICAicHJvZmlsZUlkIiA6ICJlZTU3ZDA0YjhmZDQ0ZWQxOTc3YmEwY2VhYzk2NTlkYSIsCiAgInByb2ZpbGVOYW1lIiA6ICJTdWJ6ZXJvZGl0dG8iLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDNjYTQ2NzI2YWFhNjYwNWMwNTEwMjMyOWZmMzQzNTQxNmUyOTFkYzM1ODlhMDA2YThmNWY2YjI0NzhiNTc2OSIKICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjhkZTRhODE2ODhhZDE4YjQ5ZTczNWEyNzNlMDg2YzE4ZjFlMzk2Njk1NjEyM2NjYjU3NDAzNGMwNmY1ZDMzNiIKICAgIH0KICB9Cn0="}]}}}}
+execute at @s run kill @n[type=item,nbt={Item:{id:"minecraft:iron_ingot",count:1,components:{"minecraft:custom_data":{core:"diamond"}}}}]
+kill @s

@@ -1,0 +1,62 @@
+{
+  "description": "Explosive Landing",
+  "supported_items": "#explosive_bolts:bows",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:hit_block": [
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:arrow"
+          }
+        },
+        "effect": {
+          "type": "minecraft:explode",
+          "knockback_multiplier": 2.2,
+          "offset": [
+            0,
+            0.75,
+            0
+          ],
+          "radius": 3.5,
+          "block_interaction": "none",
+          "small_particle": {
+            "type": "minecraft:explosion_emitter"
+          },
+          "large_particle": {
+            "type": "minecraft:explosion_emitter"
+          },
+          "sound": "minecraft:entity.generic.explode"
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:arrow"
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "combatplus:generic_kill"
+        }
+      }
+    ]
+  }
+}

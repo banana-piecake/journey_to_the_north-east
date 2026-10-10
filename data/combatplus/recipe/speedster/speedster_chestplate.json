@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "X": "minecraft:iron_ingot",
+    "O": "minecraft:diamond"
+  },
+  "pattern": [
+    "O O",
+    "XXX",
+    "XXX"
+  ],
+  "result": {
+    "components": {
+      "minecraft:item_name": "Speedster Chestplate",
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:movement_speed",
+          "id": "speedster:chest",
+          "amount": 0.15,
+          "operation": "add_multiplied_total",
+          "slot": "chest"
+        },
+        {
+          "type": "minecraft:armor",
+          "id": "speedster:chestar",
+          "amount": 6,
+          "operation": "add_value",
+          "slot": "chest"
+        }
+      ],
+      "minecraft:trim": {
+        "material": "minecraft:diamond",
+        "pattern": "minecraft:silence"
+      }
+    },
+    "count": 1,
+    "id": "minecraft:iron_chestplate"
+  }
+}

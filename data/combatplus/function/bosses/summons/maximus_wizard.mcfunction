@@ -1,0 +1,5 @@
+summon mannequin ~ ~ ~ {Team:"boss",Tags:["maximus_wizard"],equipment:{mainhand:{id:"minecraft:golden_axe",count:1,components:{"minecraft:item_name":{"color":"#FFB812","text":"Max's Axe"},"minecraft:enchantments":{"looting":5}}}},drop_chances:{mainhand:0.200},active_effects:[{id:"minecraft:fire_resistance",amplifier:255,duration:-1}],attributes:[{id:"minecraft:max_health",base:120}],profile:"MaximusWizard"}
+summon husk ~ ~ ~ {CustomNameVisible:0b,Tags:["maxfollow"],CustomName:"Maximus Wizard",equipment:{mainhand:{id:"minecraft:iron_axe",count:1,components:{"minecraft:item_model":"air"}}},drop_chances:{mainhand:0.000},active_effects:[{id:"minecraft:fire_resistance",amplifier:255,duration:-20},{id:"minecraft:resistance",amplifier:255,duration:-1},{id:"minecraft:invisibility",amplifier:255,duration:-1,show_particles:0b}],attributes:[{id:"minecraft:burning_time",base:0},{id:"minecraft:scale",base:0.3}],DeathLootTable:"combatplus:maximus_wizard"}
+scoreboard players set @n[tag=maximus_wizard] fireballcircle 0
+scoreboard players set @n[tag=maximus_wizard] maxtp 0
+scoreboard players set @n[tag=maximus_wizard] seekers 0

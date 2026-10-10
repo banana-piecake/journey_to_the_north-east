@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "oxo",
+    "xcx",
+    "oxo"
+  ],
+  "key": {
+    "x": [
+      "minecraft:netherite_block"
+    ],
+    "c": [
+      "minecraft:elytra"
+    ],
+    "o": [
+      "minecraft:nether_star"
+    ]
+  },
+  "result": {
+    "id": "minecraft:elytra",
+    "components": {
+      "minecraft:item_name": {
+        "text": "XC-100 Jetwings",
+        "color": "#dc1a04"
+      },
+      "minecraft:enchantments": {
+        "combatplus:jetflight": 1,
+        "minecraft:mending": 3,
+        "minecraft:unbreaking": 10
+      },
+      "minecraft:lore": [
+        {
+          "text": "Warning: May cause extreme damage if used incorrectly.",
+          "extra": [
+            " Basically,",
+            " don't be an idiot."
+          ],
+          "color": "#850000"
+        }
+      ]
+    }
+  }
+}

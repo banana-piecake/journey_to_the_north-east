@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "mystic_tome": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "components": {
+            "minecraft:custom_data": {
+              "mystic": "tome"
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "mystic_tome"
+    ]
+  ],
+  "rewards": {
+    "function": "combatplus:new_enchantments/mystic_tome"
+  }
+}

@@ -1,0 +1,2 @@
+execute at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:diamond",count:1,components:{"minecraft:enchantments":{"explosive_bolts:explosion_marker":1}}}}}
+scoreboard players set @s jtne_explosive_arrow_timer 100

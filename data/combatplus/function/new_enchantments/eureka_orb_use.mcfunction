@@ -1,0 +1,5 @@
+advancement revoke @s only combatplus:eureka_orb
+give @s echo_shard[profile={"properties":[{"name":"textures","value":"ewogICJ0aW1lc3RhbXAiIDogMTc3NTE5NDExMjI1NiwKICAicHJvZmlsZUlkIiA6ICJlZTU3ZDA0YjhmZDQ0ZWQxOTc3YmEwY2VhYzk2NTlkYSIsCiAgInByb2ZpbGVOYW1lIiA6ICJTdWJ6ZXJvZGl0dG8iLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmQ0NmJiZmYxMTMyNmRlYzk1ZDk1M2U1YWIyZTM1NjdlNGVhN2ZmNzNlOGYzZmJlODMxZGVjNzlkNTEyMWNjMyIKICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWZkNTUzYjM5MzU4YTI0ZWRmZTNiOGE5YTkzOWZhNWZhNGZhYTRkOWE5YzNkNmFmOGVhZmIzNzdmYTA1YzJiYiIKICAgIH0KICB9Cn0="}]},item_model="player_head",item_name="Eureka's Orb",consumable={consume_seconds:0.1,animation:"trident",has_consume_particles:false},max_stack_size=2,custom_data={eureka:"orb"},use_cooldown={seconds:0.3,cooldown_group:"eureka"}] 1
+execute as @s[tag=orb_thrown] run function combatplus:new_enchantments/eureka_orb_tp
+execute as @s[tag=!orb_thrown] run execute as @s[tag=!orb_use] run function combatplus:new_enchantments/eureka_orb_throw
+tag @s remove orb_use

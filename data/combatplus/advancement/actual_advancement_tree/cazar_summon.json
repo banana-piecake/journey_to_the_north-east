@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "redstone_block",
+      "components": {
+        "minecraft:enchantment_glint_override": true
+      }
+    },
+    "title": "This boss was coded 40000 ft in the air.",
+    "description": "Challenge Cazar.",
+    "hidden": false
+  },
+  "parent": "combatplus:actual_advancement_tree/cave_spider_kill",
+  "criteria": {
+    "boss": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "components": {
+            "minecraft:custom_data": {
+              "boss": "cazar"
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "boss"
+    ]
+  ]
+}

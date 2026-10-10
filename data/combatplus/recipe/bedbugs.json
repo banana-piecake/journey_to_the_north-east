@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_imbue",
+  "source": "stone",
+  "material": "minecraft:snowball",
+  "result": {
+    "id": "minecraft:snowball",
+    "components": {
+      "minecraft:enchantments": {
+        "combatplus:bedbug": 1
+      },
+      "minecraft:item_name": "Bedbugs"
+    },
+    "count": 8
+  }
+}

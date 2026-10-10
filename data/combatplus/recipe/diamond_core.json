@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " x ",
+    "xcx",
+    " x "
+  ],
+  "key": {
+    "x": [
+      "minecraft:iron_ingot"
+    ],
+    "c": [
+      "minecraft:diamond"
+    ]
+  },
+  "result": {
+    "id": "minecraft:iron_ingot",
+    "components": {
+      "minecraft:custom_data": {
+        "core": "diamond"
+      },
+      "minecraft:item_name": {
+        "text": "Diamond Boss Core",
+        "color": "#9eefff"
+      },
+      "minecraft:item_model": "minecraft:allay_spawn_egg",
+      "minecraft:enchantment_glint_override": true
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "id": "iron_sword",
+      "components": {}
+    },
+    "title": "This feels hollow, like a weapon fit for a knight.",
+    "description": "Obtain The Nail",
+    "frame": "challenge",
+    "hidden": false
+  },
+  "parent": "combatplus:actual_advancement_tree/maximus_kill",
+  "criteria": {
+    "boss": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:iron_sword",
+            "components": {
+              "minecraft:enchantments": {
+                "combatplus:nail": 1
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "boss"
+    ]
+  ]
+}

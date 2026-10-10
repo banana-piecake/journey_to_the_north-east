@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": "minecraft:stick",
+    "X": "minecraft:gunpowder"
+  },
+  "pattern": [
+    " #X",
+    "# X",
+    " #X"
+  ],
+  "result": {
+    "id": "minecraft:bow",
+    "components": {
+      "minecraft:item_name": "Bombshot",
+      "minecraft:enchantments": {
+        "explosive_bolts:explosive_bolts": 1
+      }
+    }
+  }
+}

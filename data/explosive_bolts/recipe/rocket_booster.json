@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": "minecraft:stick",
+    "$": "minecraft:tnt",
+    "&": "minecraft:iron_ingot",
+    "~": "minecraft:string"
+  },
+  "pattern": [
+    "#&#",
+    "~$~",
+    " # "
+  ],
+  "result": {
+    "id": "minecraft:crossbow",
+    "components": {
+      "minecraft:item_name": "The Rocket Booster",
+      "minecraft:enchantments": {
+        "explosive_bolts:explosive_landing": 1
+      }
+    }
+  }
+}

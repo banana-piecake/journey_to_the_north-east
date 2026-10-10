@@ -1,0 +1,1 @@
+scoreboard players set @s brawler_leap_active 1

@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "boss": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "components": {
+            "minecraft:custom_data": {
+              "boss": "wizard"
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "boss"
+    ]
+  ],
+  "rewards": {
+    "function": "combatplus:bosses/summons/summon_checks/maximus_wizard"
+  }
+}

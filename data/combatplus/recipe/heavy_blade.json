@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": "minecraft:stick",
+    "X": "#minecraft:iron_tool_materials",
+    "x": [
+      "minecraft:iron_ingot"
+    ]
+  },
+  "pattern": [
+    "  X",
+    "xX ",
+    "#x "
+  ],
+  "result": {
+    "id": "minecraft:iron_sword",
+    "components": {
+      "minecraft:item_name": "Heavy Blade",
+      "minecraft:enchantments": {
+        "combatplus:heavy_blade": 1
+      }
+    }
+  }
+}

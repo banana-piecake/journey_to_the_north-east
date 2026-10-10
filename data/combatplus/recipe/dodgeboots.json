@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "X": "minecraft:diamond",
+    "O": [
+      "minecraft:ender_pearl"
+    ]
+  },
+  "pattern": [
+    "XOX",
+    "X X"
+  ],
+  "result": {
+    "components": {
+      "minecraft:unbreakable": {},
+      "minecraft:item_name": {
+        "text": "Dodge Boots",
+        "color": "#c3f2fe",
+        "shadow_color": 328965
+      },
+      "minecraft:enchantments": {
+        "combatplus:dash": 1
+      },
+      "minecraft:lore": [
+        "The essential boots",
+        "of an adventurer or warrior",
+        "press [SPRINT] to dodge",
+        "in the same direction you're moving."
+      ],
+      "minecraft:custom_data": {
+        "dodge": "boots"
+      }
+    },
+    "count": 1,
+    "id": "minecraft:diamond_boots"
+  }
+}

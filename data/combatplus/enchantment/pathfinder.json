@@ -1,0 +1,261 @@
+{
+  "description": "Pathfinder",
+  "supported_items": "#minecraft:foot_armor",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "feet"
+  ],
+  "effects": {
+    "minecraft:location_changed": [
+      {
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.25
+            },
+            {
+              "condition": "minecraft:location_check",
+              "offsetY": -1,
+              "predicate": {
+                "block": {
+                  "blocks": "#minecraft:grass_blocks"
+                }
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:replace_block",
+          "block_state": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "minecraft:dirt"
+            }
+          },
+          "offset": [
+            0,
+            -1,
+            0
+          ]
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.06
+            },
+            {
+              "condition": "minecraft:location_check",
+              "offsetY": -1,
+              "predicate": {
+                "block": {
+                  "blocks": "minecraft:dirt"
+                }
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:replace_block",
+          "block_state": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "minecraft:coarse_dirt"
+            }
+          },
+          "offset": [
+            0,
+            -1,
+            0
+          ]
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.06
+            },
+            {
+              "condition": "minecraft:location_check",
+              "offsetY": -1,
+              "predicate": {
+                "block": {
+                  "blocks": "minecraft:coarse_dirt"
+                }
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:replace_block",
+          "block_state": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "minecraft:dirt_path"
+            }
+          },
+          "offset": [
+            0,
+            -1,
+            0
+          ]
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.06
+            },
+            {
+              "condition": "minecraft:location_check",
+              "offsetY": -1,
+              "predicate": {
+                "block": {
+                  "blocks": "stone"
+                }
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:replace_block",
+          "block_state": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "minecraft:cobblestone"
+            }
+          },
+          "offset": [
+            0,
+            -1,
+            0
+          ]
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.06
+            },
+            {
+              "condition": "minecraft:location_check",
+              "offsetY": -1,
+              "predicate": {
+                "block": {
+                  "blocks": "cobblestone"
+                }
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:replace_block",
+          "block_state": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "minecraft:gravel"
+            }
+          },
+          "offset": [
+            0,
+            -1,
+            0
+          ]
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.06
+            },
+            {
+              "condition": "minecraft:location_check",
+              "offsetY": -1,
+              "predicate": {
+                "block": {
+                  "blocks": "minecraft:gravel"
+                }
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:replace_block",
+          "block_state": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "minecraft:suspicious_gravel"
+            }
+          },
+          "offset": [
+            0,
+            -1,
+            0
+          ]
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.06
+            },
+            {
+              "condition": "minecraft:location_check",
+              "offsetY": -1,
+              "predicate": {
+                "block": {
+                  "blocks": "sand"
+                }
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:replace_block",
+          "block_state": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "minecraft:suspicious_sand"
+            }
+          },
+          "offset": [
+            0,
+            -1,
+            0
+          ]
+        }
+      }
+    ]
+  }
+}
+

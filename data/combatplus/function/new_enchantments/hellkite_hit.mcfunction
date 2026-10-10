@@ -1,0 +1,3 @@
+execute at @s run execute store result storage combatplus:hellkite_charge hellkite_charge int 2 run scoreboard players get @n[tag=hellkite] hellkite_charge
+execute at @s run execute store result storage combatplus:hellkite_vfx hellkite_vfx int 5 run scoreboard players get @n[tag=hellkite] hellkite_charge
+execute at @s run function combatplus:new_enchantments/hellkite_hit_damage with storage combatplus:hellkite_charge

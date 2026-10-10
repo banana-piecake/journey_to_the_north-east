@@ -1,0 +1,3 @@
+execute at @s run summon vex ~ ~4 ~ {Glowing:1b,CustomNameVisible:0b,Team:"miniboss",Tags:["dark_one"],CustomName:{"color":"black","text":"The Dark One"},equipment:{mainhand:{id:"minecraft:iron_sword",count:1,components:{"minecraft:item_model":"netherite_sword","minecraft:enchantments":{"combatplus:blinding":1},"minecraft:item_name":"Shadowed Blade"}}},drop_chances:{mainhand:2.000},active_effects:[{id:"minecraft:invisibility",amplifier:255,duration:-1,show_particles:0b}],attributes:[{id:"minecraft:attack_knockback",base:5},{id:"minecraft:max_health",base:40},{id:"minecraft:scale",base:3.5}]}
+scoreboard players set @n[tag=dark_one] darkness 0
+advancement revoke @s only combatplus:the_dark_one

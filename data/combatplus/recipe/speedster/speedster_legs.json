@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "X": "minecraft:iron_ingot",
+    "O": "minecraft:diamond"
+  },
+  "pattern": [
+    "OXO",
+    "X X",
+    "X X"
+  ],
+  "result": {
+    "components": {
+      "minecraft:item_name": "Speedster Leggings",
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:movement_speed",
+          "id": "speedster:leggins",
+          "amount": 0.15,
+          "operation": "add_multiplied_total",
+          "slot": "legs"
+        },
+        {
+          "type": "minecraft:armor",
+          "id": "speedster:legarm",
+          "amount": 5,
+          "operation": "add_value",
+          "slot": "legs"
+        }
+      ],
+      "minecraft:trim": {
+        "material": "minecraft:diamond",
+        "pattern": "minecraft:silence"
+      }
+    },
+    "count": 1,
+    "id": "minecraft:iron_leggings"
+  }
+}

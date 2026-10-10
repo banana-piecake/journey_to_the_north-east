@@ -1,0 +1,47 @@
+{
+  "description": "air vent",
+  "supported_items": "diamond",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "any"
+  ],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:explode",
+          "knockback_multiplier": 10.5,
+          "offset": [
+            0,
+            1,
+            0
+          ],
+          "radius": 0.7,
+          "create_fire": false,
+          "block_interaction": "none",
+          "small_particle": {
+            "type": "minecraft:gust_emitter_small"
+          },
+          "large_particle": {
+            "type": "minecraft:gust_emitter_large"
+          },
+          "block_particles": [],
+          "sound": {
+            "sound_id": "minecraft:entity.breeze.land",
+            "range": 4
+          }
+        }
+      }
+    ]
+  }
+}

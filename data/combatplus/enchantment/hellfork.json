@@ -1,0 +1,70 @@
+{
+  "anvil_cost": 8,
+  "description": "Hellfork",
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:ignite",
+          "duration": 10
+        },
+        "enchanted": "attacker",
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "attacker",
+              "predicate": {
+                "minecraft:flags": {
+                  "is_on_fire": true
+                }
+              }
+            },
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "direct_attacker",
+              "predicate": {
+                "entity_type": "minecraft:trident"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "minecraft:tick": [
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:type_specific/player": {
+              "input": {
+                "sneak": true
+              }
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:ignite",
+          "duration": 1
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 25,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#minecraft:enchantable/trident",
+  "weight": 1
+}

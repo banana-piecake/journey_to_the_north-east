@@ -1,0 +1,58 @@
+{
+  "description": "Swipe",
+  "supported_items": "#minecraft:swords",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:post_piercing_attack": [
+      {
+        "effect": {
+          "type": "minecraft:apply_impulse",
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "coordinate_scale": [
+            1,
+            0,
+            1
+          ],
+          "magnitude": 1
+        }
+      }
+    ],
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:attack_damage",
+        "id": "cazar:attack",
+        "amount": 4,
+        "operation": "add_value"
+      },
+      {
+        "attribute": "minecraft:entity_interaction_range",
+        "id": "cazar:range",
+        "amount": 2,
+        "operation": "add_value"
+      },
+      {
+        "attribute": "minecraft:sweeping_damage_ratio",
+        "id": "cazar:sweep",
+        "amount": 2,
+        "operation": "add_multiplied_total"
+      }
+    ]
+  }
+}

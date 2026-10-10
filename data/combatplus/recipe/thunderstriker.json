@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": "#minecraft:lightning_rods",
+    "X": "minecraft:string",
+    "Y": "minecraft:diamond"
+  },
+  "pattern": [
+    " YX",
+    "# X",
+    " YX"
+  ],
+  "result": {
+    "components": {
+      "minecraft:item_name": "Thunderstriker",
+      "minecraft:enchantments": {
+        "combatplus:thunderstriker": 1
+      }
+    },
+    "count": 1,
+    "id": "minecraft:bow"
+  }
+}

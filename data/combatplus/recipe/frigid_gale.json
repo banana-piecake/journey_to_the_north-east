@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": "diamond",
+    "X": "minecraft:packed_ice"
+  },
+  "pattern": [
+    " #X",
+    "# X",
+    " #X"
+  ],
+  "result": {
+    "id": "minecraft:bow",
+    "components": {
+      "minecraft:item_name": "Frigid Gale",
+      "minecraft:enchantments": {
+        "combatplus:frigid_winds": 1
+      },
+      "minecraft:custom_data": {
+        "frigid": "gale"
+      }
+    }
+  }
+}

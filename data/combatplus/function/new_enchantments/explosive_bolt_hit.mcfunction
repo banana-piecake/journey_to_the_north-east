@@ -1,0 +1,1 @@
+scoreboard players set @s jtne_explosive_arrow_timer 0

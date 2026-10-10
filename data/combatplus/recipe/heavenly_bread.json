@@ -1,0 +1,56 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "zzz",
+    "zxz",
+    "zzz"
+  ],
+  "key": {
+    "x": [
+      "minecraft:diamond"
+    ],
+    "z": [
+      "bread"
+    ]
+  },
+  "result": {
+    "id": "minecraft:bread",
+    "components": {
+      "minecraft:enchantment_glint_override": true,
+      "minecraft:food": {
+        "nutrition": 8,
+        "saturation": 7,
+        "can_always_eat": true
+      },
+      "minecraft:item_name": "Heavenly Bread",
+      "minecraft:consumable": {
+        "on_consume_effects": [
+          {
+            "type": "minecraft:apply_effects",
+            "effects": [
+              {
+                "id": "minecraft:saturation",
+                "amplifier": 1,
+                "duration": 300
+              },
+              {
+                "id": "minecraft:regeneration",
+                "amplifier": 0,
+                "duration": 60
+              }
+            ]
+          }
+        ]
+      },
+      "minecraft:lore": [
+        {
+          "text": "[SUPPORTER ITEM]",
+          "color": "#ff0000",
+          "italic": false
+        },
+        "\"Bread.\" - Barr"
+      ]
+    },
+    "count": 4
+  }
+}

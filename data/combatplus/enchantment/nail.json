@@ -1,0 +1,48 @@
+{
+  "description": "Pogo",
+  "supported_items": "#minecraft:swords",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "effect": {
+          "type": "minecraft:apply_impulse",
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "coordinate_scale": [
+            0,
+            2,
+            1
+          ],
+          "magnitude": 0.7
+        },
+        "enchanted": "attacker",
+        "affected": "attacker"
+      }
+    ],
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:safe_fall_distance",
+        "id": "nail:nail",
+        "amount": 12,
+        "operation": "add_value"
+      }
+    ]
+  }
+}

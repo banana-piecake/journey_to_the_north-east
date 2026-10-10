@@ -1,0 +1,100 @@
+{
+  "description": "Ruby Lunge",
+  "supported_items": "#minecraft:swords",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:flags": {
+              "is_on_ground": true
+            },
+            "minecraft:type_specific/player": {
+              "input": {
+                "sneak": true
+              }
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "artificer:cazar/ruby_lunge_player/ruby_lunge"
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:flags": {
+              "is_on_ground": true
+            },
+            "effects": {
+              "minecraft:unluck": {
+                "amplifier": 3
+              }
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "artificer:cazar/ruby_lunge_player/ruby_lunge_active"
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:flags": {
+              "is_on_ground": true
+            },
+            "effects": {
+              "minecraft:unluck": {
+                "amplifier": 3
+              }
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:apply_impulse",
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "coordinate_scale": [
+            1,
+            0,
+            1
+          ],
+          "magnitude": 1.2
+        }
+      }
+    ],
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:step_height",
+        "id": "cazar:step",
+        "amount": 1,
+        "operation": "add_value"
+      }
+    ]
+  }
+}
