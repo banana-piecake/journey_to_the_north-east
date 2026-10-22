@@ -12,43 +12,41 @@
     "dark": {
       "trigger": "minecraft:tick",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:all_of",
-            "terms": [
-              {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                  "slots": {
-                    "container.*": {
-                      "components": {
-                        "minecraft:custom_data": {
-                          "estus": "flask"
-                        }
-                      }
-                    }
-                  }
-                }
-              },
-              {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                  "slots": {
-                    "container.*": {
-                      "components": {
-                        "minecraft:custom_data": {
-                          "dodge": "boots"
-                        }
+        "player": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "slots": {
+                  "container.*": {
+                    "components": {
+                      "minecraft:custom_data": {
+                        "estus": "flask"
                       }
                     }
                   }
                 }
               }
-            ]
-          }
-        ]
+            },
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "slots": {
+                  "container.*": {
+                    "components": {
+                      "minecraft:custom_data": {
+                        "dodge": "boots"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
       }
     }
   },

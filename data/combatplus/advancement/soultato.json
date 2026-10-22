@@ -4,9 +4,13 @@
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "player": {
-          "effects": {
-            "minecraft:resistance": {
-              "amplifier": 57
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "effects": {
+              "minecraft:resistance": {
+                "amplifier": 57
+              }
             }
           }
         },
@@ -14,7 +18,7 @@
           "type": {
             "tags": [
               {
-                "id": "combatplus:bypass",
+                "id": "#combatplus:bypass",
                 "expected": false
               }
             ]

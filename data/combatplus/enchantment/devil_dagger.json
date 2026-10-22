@@ -19,7 +19,7 @@
     "minecraft:post_attack": [
       {
         "requirements": {
-          "condition": "minecraft:entity_properties",
+          "type": "minecraft:entity_properties",
           "entity": "attacker",
           "predicate": {
             "minecraft:flags": {
@@ -46,7 +46,7 @@
       },
       {
         "requirements": {
-          "condition": "minecraft:entity_properties",
+          "type": "minecraft:entity_properties",
           "entity": "attacker",
           "predicate": {
             "minecraft:flags": {
@@ -73,7 +73,7 @@
       },
       {
         "requirements": {
-          "condition": "minecraft:entity_properties",
+          "type": "minecraft:entity_properties",
           "entity": "attacker",
           "predicate": {
             "minecraft:flags": {

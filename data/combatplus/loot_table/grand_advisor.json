@@ -8,94 +8,91 @@
           "type": "minecraft:item",
           "name": "minecraft:book",
           "weight": 1,
-          "conditions": [],
-          "functions": [
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:use_cooldown": {
-                  "seconds": 15,
-                  "cooldown_group": "mystic_tome"
-                },
-                "minecraft:consumable": {
-                  "consume_seconds": 0,
-                  "animation": "spyglass"
-                },
-                "minecraft:food": {
-                  "nutrition": 0,
-                  "saturation": 0,
-                  "can_always_eat": true
-                },
-                "minecraft:item_name": {
-                  "text": "Mystic Tome",
-                  "color": "#a575ff"
-                },
-                "minecraft:item_model": "minecraft:enchanted_book",
-                "minecraft:lore": [
-                  "It contains a fraction of his power."
-                ],
-                "minecraft:custom_data": {
-                  "mystic": "tome"
-                },
-                "minecraft:damage_resistant": {
-                  "types": "#minecraft:is_fire"
-                },
-                "minecraft:max_stack_size": 1
-              }
+          "condition": {
+            "type": "minecraft:all_of",
+            "terms": []
+          },
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:use_cooldown": {
+                "seconds": 15,
+                "cooldown_group": "mystic_tome"
+              },
+              "minecraft:consumable": {
+                "consume_seconds": 0,
+                "animation": "spyglass"
+              },
+              "minecraft:food": {
+                "nutrition": 0,
+                "saturation": 0,
+                "can_always_eat": true
+              },
+              "minecraft:item_name": {
+                "text": "Mystic Tome",
+                "color": "#a575ff"
+              },
+              "minecraft:item_model": "minecraft:enchanted_book",
+              "minecraft:lore": [
+                "It contains a fraction of his power."
+              ],
+              "minecraft:custom_data": {
+                "mystic": "tome"
+              },
+              "minecraft:damage_resistant": {
+                "types": "#minecraft:is_fire"
+              },
+              "minecraft:max_stack_size": 1
             }
-          ]
+          }
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:diamond_sword",
           "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:item_name": {
-                  "text": "Advisor's Lance",
-                  "color": "#70ffbc"
-                },
-                "minecraft:item_model": "minecraft:diamond_spear",
-                "minecraft:lore": [
-                  {
-                    "text": "Truly, a worthy foe.",
-                    "color": "#ecfbfe",
-                    "italic": false
-                  }
-                ],
-                "minecraft:enchantments": {
-                  "combatplus:ultrastab": 1
-                },
-                "minecraft:damage_resistant": {
-                  "types": "#minecraft:is_fire"
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:item_name": {
+                "text": "Advisor's Lance",
+                "color": "#70ffbc"
+              },
+              "minecraft:item_model": "minecraft:diamond_spear",
+              "minecraft:lore": [
+                {
+                  "text": "Truly, a worthy foe.",
+                  "color": "#ecfbfe",
+                  "italic": false
                 }
+              ],
+              "minecraft:enchantments": {
+                "combatplus:ultrastab": 1
+              },
+              "minecraft:damage_resistant": {
+                "types": "#minecraft:is_fire"
               }
             }
-          ]
+          }
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:iron_ingot",
           "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:custom_data": {
-                  "wither": "dust"
-                },
-                "minecraft:item_model": "minecraft:black_dye",
-                "minecraft:item_name": "Withered Ash",
-                "minecraft:enchantment_glint_override": true,
-                "minecraft:rarity": "epic",
-                "minecraft:damage_resistant": {
-                  "types": "#minecraft:is_fire"
-                }
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:custom_data": {
+                "wither": "dust"
+              },
+              "minecraft:item_model": "minecraft:black_dye",
+              "minecraft:item_name": "Withered Ash",
+              "minecraft:enchantment_glint_override": true,
+              "minecraft:rarity": "epic",
+              "minecraft:damage_resistant": {
+                "types": "#minecraft:is_fire"
               }
             }
-          ]
+          }
         }
       ]
     }

@@ -10,12 +10,12 @@
           "value": 25
         },
         "requirements": {
-          "condition": "minecraft:damage_source_properties",
+          "type": "minecraft:damage_source_properties",
           "predicate": {
             "tags": [
               {
                 "expected": true,
-                "id": "minecraft:is_lightning"
+                "id": "#minecraft:is_lightning"
               }
             ]
           }
@@ -23,11 +23,11 @@
       },
       {
         "requirements": {
-          "condition": "minecraft:damage_source_properties",
+          "type": "minecraft:damage_source_properties",
           "predicate": {
             "tags": [
               {
-                "id": "minecraft:mace_smash",
+                "id": "#minecraft:mace_smash",
                 "expected": true
               }
             ]
@@ -40,11 +40,11 @@
       },
       {
         "requirements": {
-          "condition": "minecraft:damage_source_properties",
+          "type": "minecraft:damage_source_properties",
           "predicate": {
             "tags": [
               {
-                "id": "combatplus:fireworks",
+                "id": "#combatplus:fireworks",
                 "expected": true
               }
             ]

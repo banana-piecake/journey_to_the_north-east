@@ -19,14 +19,14 @@
     "minecraft:location_changed": [
       {
         "requirements": {
-          "condition": "minecraft:all_of",
+          "type": "minecraft:all_of",
           "terms": [
             {
-              "condition": "minecraft:random_chance",
+              "type": "minecraft:random_chance",
               "chance": 0.25
             },
             {
-              "condition": "minecraft:location_check",
+              "type": "minecraft:location_check",
               "offsetY": -1,
               "predicate": {
                 "block": {
@@ -39,9 +39,9 @@
         "effect": {
           "type": "minecraft:replace_block",
           "block_state": {
-            "type": "minecraft:simple_state_provider",
+            "type": "minecraft:simple",
             "state": {
-              "Name": "minecraft:dirt"
+              "id": "minecraft:dirt"
             }
           },
           "offset": [
@@ -53,14 +53,14 @@
       },
       {
         "requirements": {
-          "condition": "minecraft:all_of",
+          "type": "minecraft:all_of",
           "terms": [
             {
-              "condition": "minecraft:random_chance",
+              "type": "minecraft:random_chance",
               "chance": 0.06
             },
             {
-              "condition": "minecraft:location_check",
+              "type": "minecraft:location_check",
               "offsetY": -1,
               "predicate": {
                 "block": {
@@ -73,9 +73,9 @@
         "effect": {
           "type": "minecraft:replace_block",
           "block_state": {
-            "type": "minecraft:simple_state_provider",
+            "type": "minecraft:simple",
             "state": {
-              "Name": "minecraft:coarse_dirt"
+              "id": "minecraft:coarse_dirt"
             }
           },
           "offset": [
@@ -87,14 +87,14 @@
       },
       {
         "requirements": {
-          "condition": "minecraft:all_of",
+          "type": "minecraft:all_of",
           "terms": [
             {
-              "condition": "minecraft:random_chance",
+              "type": "minecraft:random_chance",
               "chance": 0.06
             },
             {
-              "condition": "minecraft:location_check",
+              "type": "minecraft:location_check",
               "offsetY": -1,
               "predicate": {
                 "block": {
@@ -107,9 +107,9 @@
         "effect": {
           "type": "minecraft:replace_block",
           "block_state": {
-            "type": "minecraft:simple_state_provider",
+            "type": "minecraft:simple",
             "state": {
-              "Name": "minecraft:dirt_path"
+              "id": "minecraft:dirt_path"
             }
           },
           "offset": [
@@ -121,14 +121,14 @@
       },
       {
         "requirements": {
-          "condition": "minecraft:all_of",
+          "type": "minecraft:all_of",
           "terms": [
             {
-              "condition": "minecraft:random_chance",
+              "type": "minecraft:random_chance",
               "chance": 0.06
             },
             {
-              "condition": "minecraft:location_check",
+              "type": "minecraft:location_check",
               "offsetY": -1,
               "predicate": {
                 "block": {
@@ -141,9 +141,9 @@
         "effect": {
           "type": "minecraft:replace_block",
           "block_state": {
-            "type": "minecraft:simple_state_provider",
+            "type": "minecraft:simple",
             "state": {
-              "Name": "minecraft:cobblestone"
+              "id": "minecraft:cobblestone"
             }
           },
           "offset": [
@@ -155,14 +155,14 @@
       },
       {
         "requirements": {
-          "condition": "minecraft:all_of",
+          "type": "minecraft:all_of",
           "terms": [
             {
-              "condition": "minecraft:random_chance",
+              "type": "minecraft:random_chance",
               "chance": 0.06
             },
             {
-              "condition": "minecraft:location_check",
+              "type": "minecraft:location_check",
               "offsetY": -1,
               "predicate": {
                 "block": {
@@ -175,9 +175,9 @@
         "effect": {
           "type": "minecraft:replace_block",
           "block_state": {
-            "type": "minecraft:simple_state_provider",
+            "type": "minecraft:simple",
             "state": {
-              "Name": "minecraft:gravel"
+              "id": "minecraft:gravel"
             }
           },
           "offset": [
@@ -189,14 +189,14 @@
       },
       {
         "requirements": {
-          "condition": "minecraft:all_of",
+          "type": "minecraft:all_of",
           "terms": [
             {
-              "condition": "minecraft:random_chance",
+              "type": "minecraft:random_chance",
               "chance": 0.06
             },
             {
-              "condition": "minecraft:location_check",
+              "type": "minecraft:location_check",
               "offsetY": -1,
               "predicate": {
                 "block": {
@@ -209,9 +209,9 @@
         "effect": {
           "type": "minecraft:replace_block",
           "block_state": {
-            "type": "minecraft:simple_state_provider",
+            "type": "minecraft:simple",
             "state": {
-              "Name": "minecraft:suspicious_gravel"
+              "id": "minecraft:suspicious_gravel"
             }
           },
           "offset": [
@@ -223,14 +223,14 @@
       },
       {
         "requirements": {
-          "condition": "minecraft:all_of",
+          "type": "minecraft:all_of",
           "terms": [
             {
-              "condition": "minecraft:random_chance",
+              "type": "minecraft:random_chance",
               "chance": 0.06
             },
             {
-              "condition": "minecraft:location_check",
+              "type": "minecraft:location_check",
               "offsetY": -1,
               "predicate": {
                 "block": {
@@ -243,9 +243,9 @@
         "effect": {
           "type": "minecraft:replace_block",
           "block_state": {
-            "type": "minecraft:simple_state_provider",
+            "type": "minecraft:simple",
             "state": {
-              "Name": "minecraft:suspicious_sand"
+              "id": "minecraft:suspicious_sand"
             }
           },
           "offset": [
@@ -258,4 +258,3 @@
     ]
   }
 }
-

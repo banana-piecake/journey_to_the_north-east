@@ -17,7 +17,7 @@
         "parry:parry": 1
       },
       "minecraft:unbreakable": {},
-      "minecraft:swing_animation": {
+      "minecraft:attack_animation": {
         "type": "whack",
         "duration": 8
       },

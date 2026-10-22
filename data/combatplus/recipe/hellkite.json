@@ -32,7 +32,7 @@
         "combatplus:hellkite": 1
       },
       "minecraft:item_name": "Hellkite",
-      "minecraft:swing_animation": {
+      "minecraft:attack_animation": {
         "type": "whack",
         "duration": 12
       },
