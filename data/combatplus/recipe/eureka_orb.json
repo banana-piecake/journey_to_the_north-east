@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "xox",
+    "oeo",
+    "xox"
+  ],
+  "key": {
+    "x": [
+      "minecraft:ender_pearl"
+    ],
+    "o": [
+      "minecraft:diamond"
+    ],
+    "e": [
+      "minecraft:dragon_breath"
+    ]
+  },
+  "result": {
+    "id": "minecraft:echo_shard",
+    "components": {
+      "minecraft:profile": {
+        "properties": [
+          {
+            "name": "textures",
+            "value": "ewogICJ0aW1lc3RhbXAiIDogMTc3NTE5NDExMjI1NiwKICAicHJvZmlsZUlkIiA6ICJlZTU3ZDA0YjhmZDQ0ZWQxOTc3YmEwY2VhYzk2NTlkYSIsCiAgInByb2ZpbGVOYW1lIiA6ICJTdWJ6ZXJvZGl0dG8iLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmQ0NmJiZmYxMTMyNmRlYzk1ZDk1M2U1YWIyZTM1NjdlNGVhN2ZmNzNlOGYzZmJlODMxZGVjNzlkNTEyMWNjMyIKICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWZkNTUzYjM5MzU4YTI0ZWRmZTNiOGE5YTkzOWZhNWZhNGZhYTRkOWE5YzNkNmFmOGVhZmIzNzdmYTA1YzJiYiIKICAgIH0KICB9Cn0="
+          }
+        ]
+      },
+      "minecraft:item_model": "player_head",
+      "minecraft:item_name": "Eureka's Orb",
+      "minecraft:consumable": {
+        "consume_seconds": 0.1,
+        "animation": "trident",
+        "has_consume_particles": false
+      },
+      "minecraft:max_stack_size": 2,
+      "minecraft:custom_data": "{eureka:\"orb\"}",
+      "minecraft:use_cooldown": {
+        "seconds": 0.3,
+        "cooldown_group": "eureka"
+      }
+    }
+  }
+}
