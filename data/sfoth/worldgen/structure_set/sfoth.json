@@ -1,0 +1,11 @@
+{
+  "structures": [
+    {
+      "structure": "sfoth:sfoth",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:dimension_origin"
+  }
+}

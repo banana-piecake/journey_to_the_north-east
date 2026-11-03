@@ -40,7 +40,10 @@
           "slot": "mainhand"
         }
       ],
-      "!minecraft:kinetic_weapon": {}
+      "!minecraft:kinetic_weapon": {},
+      "minecraft:enchantments": {
+        "combatplus:anti_lunge": 1
+      }
     }
   }
 }
