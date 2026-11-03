@@ -1,0 +1,1 @@
+scoreboard players add @s jtne_sfoth_sword_timer 1

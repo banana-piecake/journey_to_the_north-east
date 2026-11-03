@@ -70,3 +70,5 @@ scoreboard objectives add brawler_attack_timer dummy
 
 #idk other stuff atp
 scoreboard objectives add jtne_explosive_arrow_timer dummy
+
+scoreboard objectives add jtne_sfoth_sword_timer dummy

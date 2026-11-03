@@ -126,3 +126,8 @@ scoreboard players add @e[scores={jtne_explosive_arrow_timer=..40}] jtne_explosi
 execute as @e[scores={jtne_explosive_arrow_timer=40}] run execute at @s run function combatplus:new_enchantments/explosive_bolt_finish
 execute at @e[scores={jtne_explosive_arrow_timer=..40}] run particle smoke ~ ~1 ~ 0.1 0.1 0.1 0.03 2 normal
 execute at @e[scores={jtne_explosive_arrow_timer=38..40}] run particle flash{color:[1.000,1.000,1.000,0.30]} ~ ~1 ~ 0 0 0 0 0 normal
+
+
+#sfoth
+execute as @a[tag=!jtne_sfoth_active] run execute at @s if dimension combatplus:sfoth run function combatplus:in_sfoth
+execute as @a[tag=jtne_sfoth_active] run execute at @s unless dimension combatplus:sfoth run function combatplus:sfoth_leave

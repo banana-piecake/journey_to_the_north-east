@@ -23,3 +23,5 @@ recipe give @s combatplus:the_blaze
 recipe give @s combatplus:thunderstriker
 recipe give @s explosive_bolts:bombshot
 recipe give @s explosive_bolts:rocket_booster
+recipe give @s combatplus:firebrand
+recipe give @s combatplus:eureka_orb

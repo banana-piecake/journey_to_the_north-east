@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "hellkite": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "components": {
+            "minecraft:custom_data": {
+              "jtne": "firebrand"
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "hellkite"
+    ]
+  ],
+  "rewards": {
+    "function": "combatplus:new_enchantments/sfoth_sword_use"
+  }
+}

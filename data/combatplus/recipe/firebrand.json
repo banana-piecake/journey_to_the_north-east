@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": "minecraft:blaze_rod",
+    "X": "minecraft:ender_eye",
+    "Y": [
+      "minecraft:diamond"
+    ]
+  },
+  "pattern": [
+    "  Y",
+    "XY ",
+    "#X "
+  ],
+  "result": {
+    "id": "minecraft:diamond_sword",
+    "components": {
+      "minecraft:custom_data": {
+        "jtne": "firebrand"
+      },
+      "minecraft:enchantments": {
+        "combatplus:firebrand": 1
+      },
+      "minecraft:item_model": "minecraft:copper_sword",
+      "minecraft:item_name": "Firebrand",
+      "minecraft:blocks_attacks": {
+        "disable_cooldown_scale": 5
+      }
+    }
+  }
+}
