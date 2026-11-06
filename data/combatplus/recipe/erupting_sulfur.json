@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    [
+      "minecraft:breeze_rod"
+    ],
+    [
+      "minecraft:gunpowder"
+    ],
+    [
+      "sulfur"
+    ]
+  ],
+  "result": {
+    "id": "minecraft:potent_sulfur",
+    "components": {
+      "minecraft:block_state": {
+        "potent_sulfur_state": "continuous"
+      },
+      "minecraft:enchantment_glint_override": true,
+      "minecraft:item_name": "Erupting Sulfur"
+    }
+  }
+}
